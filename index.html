@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+Lucky Brands - Clothing Brand Website
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky's Brands | Clothing</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #f4c430;
+        }
+        .container {
+            padding: 30px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #111;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #f4c430;
+            color: #000;
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header / Logo -->
+    <header>
+        <div class="logo"><b>🍀</b> <b>LUCKY"S BRAND</b></div>
+        <p>
+            <i>
+                Fresh Style. Everyday Wear.
+            </i>
+        </p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container" id="products">
+        <h2>Our Collection</h2>
+        <div class="products">
+            <div class="card">
+                <img src="image\t-shirt.jpg" alt="T-Shirt" />
+                <h3>T-Shirt</h3>
+                <p>Comfortable Cotton wear</p>
+                <button onclick="addToCart('T-Shirt')">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="image\black hoodies.webp" alt="Hoodie" />
+                <h3>Hoodies</h3>
+                <p>Warm and Stylish</p>
+                <button onclick="addToCart('Hoodies')">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="image\caps.jpg" alt="Cap" />
+                <h3>Caps</h3>
+                <p>Simple Elegant Caps</p>
+                <button onclick="addToCart('Cap')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container" id="about">
+        <h2>About Lucky's Brands</h2>
+        <p>
+            Lucky's Brand is a small, thriving and upcoming clothing brand focused on delivering
+            affordable, stylish, and comfortable clothing for everyday use.
+        </p>
+        <p> 
+            Our goal is to grow step by step while maintaining quality and customer satisfaction.
+        </p>
+    </div>
+
+    <!-- Contact Section -->
+     <section id="contact">
+        <div class="card">
+            <h2>Contact Us</h2>
+            <p>Email: info@luckysbrand.com</p>
+            <p>Phone: +254 715 238 749</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 LUCKY'S BRAND. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function addToCart(item) {
+            alert(item + " has been added to your cart!");
+        }
+    </script>
+
+    <!-- ================= XHTML SAMPLE ================= -->
+    <!--
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <title>Lucky' Brand</title>
+        </head>
+        <body>
+            <p> XHTML example.</p>
+        </body>
+    </html>
+    -->
+
+    <!-- ================= XML SAMPLE ================= -->
+    <!--
+    <?xml version="1.0" encoding="UTF-8"?>
+    <products>
+        <product>
+            <name>Lucky T-Shirt</name>
+            <price>1500</price>
+            <category>Clothing</category>
+        </product>
+        <product>
+            <name>Lucky Hoodie</name>
+            <price>3000</price>
+            <category>Clothing</category>
+        </product>
+    </products>
+    -->
+</body>
+</html>
